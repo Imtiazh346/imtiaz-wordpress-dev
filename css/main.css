@@ -105,6 +105,10 @@ button:hover {
     padding: var(--medium-spacing); /* Medium padding */
 }
 
+#hamburgerShow, #hamburgerClose, .desktop-header button{
+    display: none;
+}
+
 /* Media Queries */
 @media (max-width: 768px) {
 .logo{
@@ -112,6 +116,13 @@ button:hover {
 }
 nav.container{
     width: 90%;
+}
+/* to hide desktop menu on mobile  */
+ul.nav-items{
+    display: none;
+}
+#hamburgerShow, .desktop-header button{
+    display: block;
 }
 }
 
@@ -137,5 +148,11 @@ ul{
 }
 
 .nav-items li a{
-    color: #ddd;
+    color: #ddd;}
+
+    /* hide mobile menu on default  */
+    .mobile-menu{
+        display: none;
     }
+
+ 
