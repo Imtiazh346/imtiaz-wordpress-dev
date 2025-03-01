@@ -1,0 +1,141 @@
+:root {
+    /* Color Variables */
+    --background-color: #fff; /* Background color */
+    --heading-color: #333; /* Heading color */
+    --base-color: rgb(117, 117, 117); /* Base text color */
+    --link-color: #007bff; /* Link color */
+    --link-hover-color: #0056b3; /* Link hover color */
+    --border-color: #ddd; /* Border color */
+    
+    /* Font Variables */
+    --heading-font: "Poppins", sans-serif; /* Heading font */
+    --base-font: "Inter", sans-serif; /* Base font */
+    
+    /* Spacing Variables */
+    --small-spacing: 0.5rem; /* Small spacing */
+    --medium-spacing: 1rem; /* Medium spacing */
+    --large-spacing: 2rem; /* Large spacing */
+    
+    /* Border Radius */
+    --border-radius: 5px; /* Border radius for rounded corners */
+    
+    /* Shadow */
+    --box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Box shadow */
+}
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background-color); /* Set background color */
+    color: var(--base-color); /* Set base text color */
+    font-family: var(--base-font); /* Set base font */
+    line-height: 1.6; /* Line height for readability */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-color); /* Set heading color */
+    font-family: var(--heading-font); /* Set heading font */
+    margin-bottom: var(--medium-spacing); /* Space below headings */
+}
+
+.container {
+    max-width: 1100px; /* Maximum width for the container */
+    margin: 0 auto; /* Center the container */
+}
+
+a {
+    color: var(--link-color); /* Set link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+a:hover {
+    color: var(--link-hover-color); /* Change link color on hover */
+}
+li{
+    list-style-type: none;
+    font-size: 18px;
+}
+
+button {
+    background-color: var(--link-color); /* Button background color */
+    color: #fff; /* Button text color */
+    border: none; /* Remove border */
+    border-radius: var(--border-radius); /* Rounded corners */
+    padding: var(--small-spacing) var(--medium-spacing); /* Padding */
+    cursor: pointer; /* Pointer cursor */
+    box-shadow: var(--box-shadow); /* Box shadow */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+button:hover {
+    background-color: var(--link-hover-color); /* Change button color on hover */
+}
+
+.card {
+    background-color: #fff; /* Card background color */
+    border: 1px solid var(--border-color); /* Card border */
+    border-radius: var(--border-radius); /* Rounded corners */
+    padding: var(--medium-spacing); /* Padding inside card */
+    box-shadow: var(--box-shadow); /* Box shadow */
+    margin-bottom: var(--medium-spacing); /* Space below card */
+}
+
+/* Utility Classes */
+.text-center {
+    text-align: center; /* Center text */
+}
+
+.mt-1 {
+    margin-top: var(--small-spacing); /* Small top margin */
+}
+
+.mt-2 {
+    margin-top: var(--medium-spacing); /* Medium top margin */
+}
+
+.mb-2 {
+    margin-bottom: var(--medium-spacing); /* Medium bottom margin */
+}
+
+.p-2 {
+    padding: var(--medium-spacing); /* Medium padding */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+.logo{
+    width: 80px;
+}
+nav.container{
+    width: 90%;
+}
+}
+
+header{
+    background-color: #090808;
+}
+
+nav.container, .icons_list, .nav-items, li ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* header icons spacing */
+.icons_list{
+    gap: 15px;
+}
+
+/* header items spacing */
+ul{
+    gap: 20px;
+    padding-left: 20px;
+    color: #ddd;
+}
+
+.nav-items li a{
+    color: #ddd;
+    }
