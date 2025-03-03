@@ -11,47 +11,18 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    <header>
-        <nav class="container desktop-header">
-            <img src="./image/logo.png" alt="Imtiaz Hussain" class="logo" height="auto" width="120px">
-            <!-- Desktop Menu Items  -->
-            <ul class="nav-items">
-                <li><a href="about">About</a></li>
-                <li><a href="services">Services</a></li>
-                <li><a href="portfolio">Portfolio</a></li>
-                <li><a href="blog">Blog</a></li>
-                <li><a href="contact">Contact</a></li>
-                <li>
-                    <ul class="icons_list">
-                        <li><a href="https://www.linkedin.com/in/dev-imtiaz/" class="fa-brands fa-linkedin"
-                                target="_blank"></a></li>
-                        <li><a href="https://wa.me/923003360499" class="fa-brands fa-whatsapp" target="_blank"></a></li>
-                        <li><a href="mailto:imtiazh346@gmail.com" class="fa-regular fa-envelope" target="_blank"></a>
-                        </li>
-                        <li><a href="https://github.com/Imtiazh346" class="fa-brands fa-github" target="_blank"></a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <button onclick="showHamburger" class="fa-solid fa-bars-staggered" id="hamburgerShow"></button>
-            <button onclick="closeHamburger" class="fa-solid fa-square-xmark" id="hamburgerClose"></button>
-        </nav>
-
-        <!-- Mobile Menu Items  -->
-        <div class="mobile-menu">
-            <!-- <h3>Welcome to my website!</h3> -->
-            <ul class="mobile-nav">
-                <li><a href="about">About</a></li>
-                <li><a href="services">Services</a></li>
-                <li><a href="portfolio">Portfolio</a></li>
-                <li><a href="blog">Blog</a></li>
-                <li><a href="contact">Contact</a></li>
-            </ul>
-
-            <!-- Social icons for mobile menu  -->
-            <div class="social-links-mobile">
-                <ul class="icons_list-mobile">
+<header>
+    <nav class="container desktop-header">
+        <img src="./image/logo.png" alt="Imtiaz Hussain" class="logo" height="auto" width="120px">
+        <!-- Desktop Menu Items  -->
+        <ul class="nav-items">
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="portfolio">Portfolio</a></li>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="contact">Contact</a></li>
+            <li>
+                <ul class="icons_list">
                     <li><a href="https://www.linkedin.com/in/dev-imtiaz/" class="fa-brands fa-linkedin"
                             target="_blank"></a></li>
                     <li><a href="https://wa.me/923003360499" class="fa-brands fa-whatsapp" target="_blank"></a></li>
@@ -60,23 +31,67 @@
                     <li><a href="https://github.com/Imtiazh346" class="fa-brands fa-github" target="_blank"></a>
                     </li>
                 </ul>
-            </div>
-        </div>
+            </li>
+        </ul>
+        <button onclick="showHamburger" class="fa-solid fa-bars-staggered" id="hamburgerShow"></button>
+        <button onclick="closeHamburger" class="fa-solid fa-square-xmark" id="hamburgerClose"></button>
+    </nav>
 
-    </header>
+    <!-- Mobile Menu Items  -->
+    <div class="mobile-menu">
+        <!-- <h3>Welcome to my website!</h3> -->
+        <ul class="mobile-nav">
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="portfolio">Portfolio</a></li>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="contact">Contact</a></li>
+        </ul>
 
-    <!-- hero section code  -->
-    <div class="container hero-section">
-        <div class="hero-text">
-            <h1>about.</h1>
-            <p class="hero-sub-head">I'm a skilled WordPress developer based in Lahore,Pakistan, specializing in custom solutions.</p> 
-            <p>I specialize in customizing themes, WooCommerce, and page builders. I create responsive and easy-to-use <br> websites that meet clients' needs for a smooth online <br>experience.</p>
+        <!-- Social icons for mobile menu  -->
+        <div class="social-links-mobile">
+            <ul class="icons_list-mobile">
+                <li><a href="https://www.linkedin.com/in/dev-imtiaz/" class="fa-brands fa-linkedin" target="_blank"></a>
+                </li>
+                <li><a href="https://wa.me/923003360499" class="fa-brands fa-whatsapp" target="_blank"></a></li>
+                <li><a href="mailto:imtiazh346@gmail.com" class="fa-regular fa-envelope" target="_blank"></a>
+                </li>
+                <li><a href="https://github.com/Imtiazh346" class="fa-brands fa-github" target="_blank"></a>
+                </li>
+            </ul>
         </div>
-        <!-- <img src="./image/hero-image.jpg" alt=""> -->
-        <div class="hero-image"></div>
     </div>
 
-    <script src="./script/main.js"></script>
+</header>
+
+<!-- hero section code  -->
+<div class="container hero-section">
+    <div class="hero-text">
+        <h1>about.</h1>
+        <p class="hero-sub-head">I'm a skilled WordPress developer based in Lahore,Pakistan, specializing in custom
+            solutions.</p>
+        <p>I specialize in customizing themes, WooCommerce, and page builders. I create responsive and easy-to-use <br>
+            websites that meet clients' needs for a smooth online <br>experience.</p>
+    </div>
+    <div class="hero-image"></div>
+</div>
+
+<!-- Hero Gallery  -->
+<section class="hero-gallery">
+    <div class="container hero-images">
+        <img src="./image/toddler.jpg" alt="" srcset="">
+        <img src="./image/workspace.jpg" alt="" srcset="">
+        <img src="./image/sydney.jpg" alt="" srcset="">
+        <img src="./image/l-sit-pullup.jpg" alt="" srcset="">
+        <img src="./image/interior-design.jpg" alt="" srcset="">
+        <img src="./image/home.jpg" alt="" srcset="">
+    </div>
+</section>
+
+<!-- hero section code  -->
+
+
+<script src="./script/main.js"></script>
 </body>
 
 </html>
