@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Imtiaz </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .main-contact {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .contact-text{
+            width: calc(100% - 20px);
+        }
+
+        li a {
+            text-decoration: none;
+        }
+
+        li a span {
+            padding: px;
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+
+        .social-icons-list li {
+            list-style-type: none;
+        }
+
+        .contact-img {
+            width: 100%;
+        }
+        .contact-img img {
+            object-fit: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: auto;
+        }
+
+        @media (max-width:767px){
+            .main-contact{
+                display: flex;
+                flex-direction: column;
+            }
+            .contact-img img {
+            object-fit: fill;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <section >
+        <div class="container main-contact">
+            <div class="contact-text">
+                <h1>contact.</h1>
+                <p>Get in touch with me via social media or send me an email.</p>
+                <div class="contact-social">
+                    <ul class="social-icons-list">
+                        <li><a href="" class="fa-brands fa-whatsapp"><span>WhatsApp</span></a></li>
+                        <li><a href="" class="fa-brands fa-linkedin"><span>Linkedin</span></a> </li>
+                        <li><a href="" class="fa-brands fa-facebook"><span>FaceBook</span></a></li>
+                        <li><a href="" class="fa-brands fa-instagram"><span>Instagram</span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Image div  -->
+            <div class="contact-img">
+                <img src="../image/adham-dannaway-half-face.jpg" alt="">
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
